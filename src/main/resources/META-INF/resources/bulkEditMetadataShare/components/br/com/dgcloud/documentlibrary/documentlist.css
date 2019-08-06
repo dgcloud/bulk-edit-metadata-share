@@ -1,0 +1,13 @@
+.form-container label
+{
+   text-align: left;
+}
+
+.form-container input, .form-container input[type="file"], .form-container input[type="text"], .form-container input[type="password"] {
+	clear: both;
+	width: 100%;
+}
+
+.yui-gc div.first, .yui-gd .yui-u {
+	width: 64%;
+}
