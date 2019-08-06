@@ -11,3 +11,8 @@
 .yui-gc div.first, .yui-gd .yui-u {
 	width: 64%;
 }
+
+.toolbar .onActionEditMultipleDocumentMetadata
+{
+   background-image: url(actions/document-edit-properties-16.png);
+}
