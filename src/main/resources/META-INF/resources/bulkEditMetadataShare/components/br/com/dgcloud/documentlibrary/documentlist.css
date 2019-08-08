@@ -8,6 +8,22 @@
 	width: 100%;
 }
 
+.form-container select {
+	width: auto;
+	float: left;
+}
+
+.form-container input.date-entry {
+	margin-bottom: 0.1em;
+	width: 90% !important;
+	float: left;
+}
+
+.form-container .format-info {
+	margin-bottom: 0;
+	float: left;
+}
+
 .yui-gc div.first, .yui-gd .yui-u {
 	width: 64%;
 }
