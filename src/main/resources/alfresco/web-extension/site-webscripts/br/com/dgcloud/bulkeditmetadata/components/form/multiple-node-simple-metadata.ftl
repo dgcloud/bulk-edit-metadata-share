@@ -5,9 +5,17 @@
 <div id="${args.htmlid}-dialog">
    <div id="${args.htmlid}-dialogTitle" class="hd"></div>
    <div class="bd">
- 
+ 	
+ 	<#assign el=args.htmlid?html>
+ 	
+	<div style="padding: 1em; border-bottom: 1px solid #ccc">
+		<label>
+			<a onclick="javascript:checkAll('${formId}', true);" href="javascript:void();">${msg("form.checkAll")}</a> | 
+			<a onclick="javascript:checkAll('${formId}', false);" href="javascript:void();">${msg("form.uncheckAll")}</a>
+		</label>
+    </div>
+        
       <div id="${formId}-container" class="form-container">
-    
          <#if form.showCaption?exists && form.showCaption>
             <div id="${formId}-caption" class="caption"><span class="mandatory-indicator">*</span>${msg("form.required.fields")}</div>
          </#if>
@@ -42,3 +50,18 @@ YAHOO.util.Event.onAvailable('muliple-edit-nodeRefs', function(){
 });
  
 </script>
+
+<script type="text/javascript" language="javascript">// <![CDATA[
+function checkAll(formname, checktoggle)
+{
+  var checkboxes = new Array(); 
+  checkboxes = document.getElementById(formname).getElementsByTagName('input');
+ 
+  for (var i=0; i<checkboxes.length; i++)  {
+    if (checkboxes[i].type == 'checkbox')   {
+      checkboxes[i].checked = checktoggle;
+      checkboxes[i].onchange();
+    }
+  }
+}
+// ]]></script>
