@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.dgcloud</groupId>
     <artifactId>bulk-edit-metadata-share</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>bulk-edit-metadata-share Share Jar Module - SDK 3</name>
     <description>Share JAR Module (to be included in the share.war) - SDK 3</description>
     <packaging>jar</packaging>
